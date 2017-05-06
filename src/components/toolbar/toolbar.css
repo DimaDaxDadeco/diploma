@@ -1,0 +1,157 @@
+.toolbar {
+    position: fixed;
+    height: 100%;
+}
+
+.toolbar__content {
+    position: relative;
+    background: #fff;
+    width: 200px;
+    height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.toolbar__open {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.toolbar__open_line,
+.toolbar__close_line {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 7px;
+    background: #fff;
+}
+
+.toolbar__close {
+    position: relative;
+    top: 15px;
+    float: right;
+    cursor: pointer;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.toolbar__close_line {
+    background: #000;
+    margin-bottom: 0;
+    width: 18px;
+    height: 2px;
+}
+
+.toolbar__close_line:first-child {
+    transform: rotate(45deg);
+}
+
+.toolbar__close_line:last-child {
+    transform: rotate(-45deg);
+    margin-top: -2px;
+}
+
+.clearfix:before,
+.clearfix:after {
+   content: "";
+   display: table;
+}
+
+.clearfix:after {
+   clear: both;
+}
+
+.clearfix {
+   zoom: 1;
+}
+
+.toolbar__equation_value {
+    width: 22px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    text-align: right;
+}
+
+.toolbar__draw-btn,
+.toolbar__projection-btn {
+    display: block;
+    margin: 10px 0;
+}
+
+.toolbar__determination_list {
+    padding-left: 20px;
+    list-style: decimal;
+}
+
+.toolbar__determination_overline {
+    text-decoration: overline;
+}
+
+.toolbar__fraction {
+    display: inline-table;
+    vertical-align: middle;
+}
+
+.toolbar__fraction_numerator,
+.toolbar__fraction_denominator {
+    display: table-row;
+}
+
+.toolbar__numerator_content {
+    border-bottom: 1px solid #000;
+}
+
+.toolbar__content_title {
+    margin-top: 0;
+}
+
+.toolbar__dropdown-wrap {
+    position: relative;
+}
+
+.toolbar__dropdown-wrap::after {
+    content: ">";
+    display: block;
+    transform: rotate(90deg);
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    font-weight: bold;
+}
+
+.toolbar__dropdown-wrap-active::after {
+    transform: rotate(-90deg);
+}
+
+.toolbar__dropdown-wrap_selected {
+    border: 1px solid #000;
+    display: block;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.toolbar__dropdown {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #000;
+    border-top: 0;
+    margin-top: 0;
+    width: 99%;
+}
+
+.toolbar__dropdown_item {
+    padding: 0 5px;
+}
+
+.toolbar__dropdown_item:hover {
+    cursor: pointer;
+    background: #ccc;
+    padding: 0 5px;
+}
+
+.toolbar__step-btn {
+    margin-bottom: 5px;
+}
